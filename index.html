@@ -58,8 +58,13 @@
             color: #2c3e50; /* Warna teks di dalam section */
         }
         @media (max-width: 600px) {
+            .header {
+                flex-direction: column; /* Mengatur layout vertikal untuk layar kecil */
+                align-items: center; /* Mengatur gambar dan teks ke tengah */
+            }
             .header img {
                 width: 50%; /* Lebar 50% pada layar yang lebih kecil */
+                margin-top: 10px; /* Menambahkan jarak di atas gambar */
             }
         }
     </style>
