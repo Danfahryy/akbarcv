@@ -29,10 +29,10 @@
             border-radius: 10px;
         }
         .header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
+            width: 30%; /* Mengatur lebar gambar menjadi 30% dari lebar kontainer */
+            height: auto; /* Tinggi otomatis untuk menjaga rasio aspek */
+            border-radius: 50%; /* Membuat gambar menjadi bulat */
+            object-fit: cover; /* Memastikan gambar tidak terdistorsi */
             border: 3px solid #ecf0f1; /* Bingkai gambar profil */
         }
         .header div {
@@ -56,6 +56,11 @@
         .section p {
             margin-top: 10px;
             color: #2c3e50; /* Warna teks di dalam section */
+        }
+        @media (max-width: 600px) {
+            .header img {
+                width: 50%; /* Lebar 50% pada layar yang lebih kecil */
+            }
         }
     </style>
 </head>
